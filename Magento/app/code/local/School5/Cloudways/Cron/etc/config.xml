@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <School5_Cloudways>
+            <version>1.0</version>
+        </School5_Cloudways>
+    </modules>
+    <crontab>
+        <jobs>
+            <custom_cron_task>
+                <schedule>
+                    <cron_expr>*/5 * * * * </cron_expr>
+                </schedule>
+                <run>
+                    <model>cron/cron::crontask</model>
+                </run>
+            </custom_cron_task>
+        </jobs>
+    </crontab>
+    <global>
+        <models>
+            <cron>
+                <class>School5_Cloudways_Cron_Model</class>
+            </cron>
+        </models>
+    </global>
+</config>

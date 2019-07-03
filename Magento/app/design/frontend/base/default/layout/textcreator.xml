@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<layout version="0.0.1">
+    <textcreator_index_index>
+        <reference name="content">
+            <block type="textcreator/textCreator" name="textcreator_main" template="textcreator/textcreator.phtml" >
+                <block type="textcreator/textCreator2" name="first" template="textcreator/textcreator2.phtml" />
+                <block type="textcreator/textCreator3" name="second" template="textcreator/textcreator3.phtml" />
+            </block>
+        </reference>
+        <remove name="top.menu"/>
+    </textcreator_index_index>
+</layout>
